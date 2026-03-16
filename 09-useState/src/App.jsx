@@ -1,16 +1,15 @@
-import React from 'react'
+import React, { useState } from 'react'
 
 const App = () => {
-
-  let a = 20;
-  function cahngeA(){
-    a = 30
+  const [num, setNum] = useState({user:'vishal',age:17})
+  const btnClicked = ()=>{
+    setNum(prev=>({...prev,age:50}))
   }
 
   return (
-    <div>
-      <button onClick={cahngeA}>Click</button>
-      <h1>Value of a = {a}</h1>
+    <div className='main'>
+      <h1>{num.user}, {num.age}</h1>
+      <button onClick={btnClicked}>click</button>
     </div>
   )
 }
