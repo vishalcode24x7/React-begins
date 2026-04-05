@@ -1,0 +1,33 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+html, body{
+  height: 100%;
+  width: 100%;
+  background-color: black;
+  color: white;
+}
+
+.nav{
+  display: flex;
+  background-color: lightgreen;
+  justify-content: space-between;
+  color: black;
+  align-items: center;
+  padding: 20px 40px;
+}
+.light{
+  background-color: lightgreen;
+}
+.dark{
+  background-color: darkslategrey;
+}
+.nav2{
+  display: flex;
+  gap: 30px;
+
+}
